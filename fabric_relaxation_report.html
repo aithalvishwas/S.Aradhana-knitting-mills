@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabric Relaxation Report - S.ARADHANA KNITTING MILLS PVT LTD.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Hide all steps except the first one by default */
+        .form-step {
+            display: none;
+        }
+        .form-step.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 py-10">
+    <div class="container mx-auto max-w-4xl">
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+            <div class="text-center mb-8 border-b pb-4">
+                <h1 class="text-2xl font-bold text-gray-800">S.ARADHANA KNITTING MILLS PVT LTD.</h1>
+                <p class="mt-2 text-lg text-gray-600 font-semibold">FABRIC RELAXATION REPORT</p>
+            </div>
+
+            <form action="#" method="POST">
+                <div id="step-1" class="form-step active">
+                    <div class="flex justify-between items-center mb-6">
+                         <h3 class="text-xl font-semibold text-gray-700">General Information</h3>
+                         <div class="flex items-center">
+                            <label for="report-date" class="block text-sm font-medium text-gray-700 mr-2">Date:</label>
+                            <input type="date" name="report-date" id="report-date" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        </div>
+                    </div>
+                   
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+                        <div>
+                            <label for="style-no" class="block text-sm font-medium text-gray-700">Style No.</label>
+                            <input type="text" name="style-no" id="style-no" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="po-no" class="block text-sm font-medium text-gray-700">PO No.</label>
+                            <input type="text" name="po-no" id="po-no" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="dia" class="block text-sm font-medium text-gray-700">Dia</label>
+                            <input type="text" name="dia" id="dia" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="buyer-name" class="block text-sm font-medium text-gray-700">Buyer Name</label>
+                            <input type="text" name="buyer-name" id="buyer-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="colour" class="block text-sm font-medium text-gray-700">Colour</label>
+                            <input type="text" name="colour" id="colour" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="no-of-roll" class="block text-sm font-medium text-gray-700">No. of Roll Relaxed</label>
+                            <input type="number" name="no-of-roll" id="no-of-roll" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="lot-no" class="block text-sm font-medium text-gray-700">Lot No.</label>
+                            <input type="text" name="lot-no" id="lot-no" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="total-weight" class="block text-sm font-medium text-gray-700">Total Weight in Kgs</label>
+                            <input type="number" step="0.01" name="total-weight" id="total-weight" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="relaxation-start-date" class="block text-sm font-medium text-gray-700">Relaxation Start Date</label>
+                            <input type="date" name="relaxation-start-date" id="relaxation-start-date" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="relaxation-start-time" class="block text-sm font-medium text-gray-700">Relaxation Start Time</label>
+                            <input type="time" name="relaxation-start-time" id="relaxation-start-time" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="relaxation-end-date" class="block text-sm font-medium text-gray-700">Relaxation End Date</label>
+                            <input type="date" name="relaxation-end-date" id="relaxation-end-date" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        </div>
+                         <div>
+                            <label for="relaxation-end-time" class="block text-sm font-medium text-gray-700">Relaxation End Time</label>
+                            <input type="time" name="relaxation-end-time" id="relaxation-end-time" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="step-2" class="form-step">
+                     <h3 class="text-xl font-semibold text-gray-700 mb-6">Details & Signatures</h3>
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                         <div>
+                            <label for="date-of-issue" class="block text-sm font-medium text-gray-700">Date of Issue to Cutting</label>
+                            <input type="date" name="date-of-issue" id="date-of-issue" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        </div>
+                     </div>
+                     <div class="mt-6">
+                        <label for="remarks" class="block text-sm font-medium text-gray-700">Remarks</label>
+                        <textarea id="remarks" name="remarks" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"></textarea>
+                    </div>
+
+                    <div class="mt-12 pt-8 border-t-2">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                            <div>
+                                <div class="w-full h-16 border-b-2 border-gray-400 border-dashed"></div>
+                                <p class="mt-2 text-sm font-medium text-gray-700">Fabric QC</p>
+                            </div>
+                            <div>
+                                <div class="w-full h-16 border-b-2 border-gray-400 border-dashed"></div>
+                                <p class="mt-2 text-sm font-medium text-gray-700">Cutting Incharge</p>
+                            </div>
+                             <div>
+                                <div class="w-full h-16 border-b-2 border-gray-400 border-dashed"></div>
+                                <p class="mt-2 text-sm font-medium text-gray-700">QAM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-5 border-t flex justify-between items-center">
+                     <div>
+                        <a href="dashboard.html" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                           &larr; Back to Dashboard
+                        </a>
+                    </div>
+                    <div class="flex gap-4">
+                        <button type="button" id="prev-btn" class="hidden bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-6 rounded-lg">
+                            Previous
+                        </button>
+                        <button type="button" id="next-btn" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded-lg">
+                            Next
+                        </button>
+                        <button type="submit" id="submit-btn" class="hidden bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg">
+                            Submit Report
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const steps = Array.from(document.querySelectorAll('.form-step'));
+        const nextBtn = document.getElementById('next-btn');
+        const prevBtn = document.getElementById('prev-btn');
+        const submitBtn = document.getElementById('submit-btn');
+        
+        let currentStep = 0;
+
+        function showStep(stepIndex) {
+            steps.forEach((step, index) => {
+                step.classList.toggle('active', index === stepIndex);
+            });
+            
+            prevBtn.classList.toggle('hidden', stepIndex === 0);
+            nextBtn.classList.toggle('hidden', stepIndex === steps.length - 1);
+            submitBtn.classList.toggle('hidden', stepIndex !== steps.length - 1);
+        }
+
+        nextBtn.addEventListener('click', () => {
+            if (currentStep < steps.length - 1) {
+                currentStep++;
+                showStep(currentStep);
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentStep > 0) {
+                currentStep--;
+                showStep(currentStep);
+            }
+        });
+
+        showStep(currentStep);
+    </script>
+</body>
+</html>
